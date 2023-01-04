@@ -1,0 +1,60 @@
+\hypertarget{_course_edit_page_8h_source}{}\doxysection{Course\+Edit\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COURSEEDITPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COURSEEDITPAGE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}course.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}LecHall.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}student.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}professor.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_course_edit_page}{CourseEditPage}};}
+\DoxyCodeLine{13 \}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_course_edit_page}{CourseEditPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     Q\_OBJECT}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_course_edit_page}{CourseEditPage}}(QWidget *parent = \textcolor{keyword}{nullptr},QMap<QString,Course>:: Iterator corsIt = \{\});}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_course_edit_page_a08ea73ad309eb4d6e252354f94f7b9d8}{\string~CourseEditPage}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_a85748e55ba59009f2e75b1db9f40cd80}{lecHallComboboxdisplay}}();}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_a14a4f394a930e4a8e09eabfee31e91c1}{dayComboboxdisplay}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_aa375799869d1d1af599fc75673febfae}{timeComboboxdisplay}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_a971537d075afaa98aa077c488debf17e}{allStdTableDisplay}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_a884f13ca08ec20027ed3319974142cd1}{allPrfTableDisplay}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_a2dea82510cb25a746811396fc8a15cec}{addedStdTableDisplay}}();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_a7ac8ef28555a642054897874db8b1ac1}{addedPrfTableDisplay}}();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_course_edit_page_acb54be77b21d6c3c52fd3f2c7078d7ef}{setValidator}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} on\_SavePushButton\_clicked();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} on\_allStudentsTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} on\_allProfessorsTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} on\_lecHallCBox\_textActivated(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} on\_dayComboBox\_textActivated(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} on\_addedStudentsTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} on\_addedProfessorsTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{private}:}
+\DoxyCodeLine{50     Ui::CourseEditPage *ui;}
+\DoxyCodeLine{51 QString oldCode;}
+\DoxyCodeLine{52     \mbox{\hyperlink{class_course}{Course}} *corsPtr;}
+\DoxyCodeLine{53 \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// COURSEEDITPAGE\_H}}
+
+\end{DoxyCode}

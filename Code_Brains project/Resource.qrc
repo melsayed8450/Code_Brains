@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>img/Artboard 1 copy.png</file>
+        <file>img/add.png</file>
+        <file>img/delete.png</file>
+        <file>img/info.png</file>
+        <file>img/logout.png</file>
+        <file>img/ref.png</file>
+        <file>img/save.png</file>
+    </qresource>
+</RCC>

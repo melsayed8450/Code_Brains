@@ -1,0 +1,50 @@
+\hypertarget{class_admin}{}\doxysection{Admin Class Reference}
+\label{class_admin}\index{Admin@{Admin}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_admin_a4791a0899e930905d912a8f2bb0faad5}\label{class_admin_a4791a0899e930905d912a8f2bb0faad5}} 
+int {\bfseries hashing} (QString password)
+\begin{DoxyCompactList}\small\item\em a function used to hash the password to secure it \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_a12400eb3e9e8e2eb6ec3f4c2cbd54cad}\label{class_admin_a12400eb3e9e8e2eb6ec3f4c2cbd54cad}} 
+bool {\bfseries check\+Username} (QString username)
+\begin{DoxyCompactList}\small\item\em a function used to check if the username is used before or not \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_a43161528b123771c03a0a4f0f7cbfdd2}\label{class_admin_a43161528b123771c03a0a4f0f7cbfdd2}} 
+bool {\bfseries check\+Password} (QString password)
+\begin{DoxyCompactList}\small\item\em a function used to check if the password is less than 8 characters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_af3e414f6d07e03cd2eb67d0e2ab26a5d}\label{class_admin_af3e414f6d07e03cd2eb67d0e2ab26a5d}} 
+void {\bfseries register\+New} (QString username, QString password, QString full\+Name)
+\begin{DoxyCompactList}\small\item\em a function that adds the new username, password and full name to our maps \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_ae24a5a3b9aa2c1e42d7427364dfe6db8}\label{class_admin_ae24a5a3b9aa2c1e42d7427364dfe6db8}} 
+void {\bfseries delete\+User} (QString username)
+\begin{DoxyCompactList}\small\item\em a function used to delete an admin from our maps \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_aef41ad316d7ee96772933ceb1e03b7f8}\label{class_admin_aef41ad316d7ee96772933ceb1e03b7f8}} 
+bool {\bfseries login\+Check} (QString username, QString password)
+\begin{DoxyCompactList}\small\item\em a function that checks if the entered username and password match with each other \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_a7da1260d6044538b6de49720688030de}\label{class_admin_a7da1260d6044538b6de49720688030de}} 
+void {\bfseries set\+Username} (QString username)
+\begin{DoxyCompactList}\small\item\em a function to change the username of admin \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_a33376573b7bf7ace86b35db7092caae8}\label{class_admin_a33376573b7bf7ace86b35db7092caae8}} 
+void {\bfseries set\+Password} (QString password)
+\begin{DoxyCompactList}\small\item\em a function to change password of admin \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_a0e3543513b8caec3cf99b74b0bb98416}\label{class_admin_a0e3543513b8caec3cf99b74b0bb98416}} 
+void {\bfseries set\+Full\+Name} (QString full\+Name)
+\begin{DoxyCompactList}\small\item\em a function to change full name of admin \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_a286e32d5405685f7bd8c03147c15c26f}\label{class_admin_a286e32d5405685f7bd8c03147c15c26f}} 
+QString {\bfseries get\+Full\+Name} (QString username)
+\begin{DoxyCompactList}\small\item\em a function to get the full name of admin \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_admin_a749a2534ec805a60a4e8147ac2ab4602}\label{class_admin_a749a2534ec805a60a4e8147ac2ab4602}} 
+static QMap$<$ QString, int $>$ {\bfseries check} = \{\}
+\item 
+\mbox{\Hypertarget{class_admin_a3f832092a2758592a54700c831a48623}\label{class_admin_a3f832092a2758592a54700c831a48623}} 
+static QMap$<$ QString, QString $>$ {\bfseries username\+Full\+Name} = \{\}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+admin.\+h\item 
+admin.\+cpp\end{DoxyCompactItemize}

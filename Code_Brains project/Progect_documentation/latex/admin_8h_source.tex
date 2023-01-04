@@ -1,0 +1,62 @@
+\hypertarget{admin_8h_source}{}\doxysection{admin.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//\#ifndef ADMIN\_H}}
+\DoxyCodeLine{2 \textcolor{comment}{//\#define ADMIN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include<QObject>}}
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_admin}{Admin}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     QString username;}
+\DoxyCodeLine{17     QString password;}
+\DoxyCodeLine{18     QString fullName;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \textcolor{keyword}{static} QMap<QString, int> check;}
+\DoxyCodeLine{25     \textcolor{keyword}{static} QMap<QString, QString> usernameFullName;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \mbox{\hyperlink{class_admin}{Admin}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_admin_a4791a0899e930905d912a8f2bb0faad5}{hashing}}(QString password);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_admin_a12400eb3e9e8e2eb6ec3f4c2cbd54cad}{checkUsername}}(QString username);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_admin_a43161528b123771c03a0a4f0f7cbfdd2}{checkPassword}}(QString password);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_admin_af3e414f6d07e03cd2eb67d0e2ab26a5d}{registerNew}}(QString username, QString password, QString fullName);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_admin_ae24a5a3b9aa2c1e42d7427364dfe6db8}{deleteUser}}(QString username);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_admin_aef41ad316d7ee96772933ceb1e03b7f8}{loginCheck}}(QString username, QString password);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_admin_a7da1260d6044538b6de49720688030de}{setUsername}}(QString username);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_admin_a33376573b7bf7ace86b35db7092caae8}{setPassword}}(QString password);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_admin_a0e3543513b8caec3cf99b74b0bb98416}{setFullName}}(QString fullName);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     QString \mbox{\hyperlink{class_admin_a286e32d5405685f7bd8c03147c15c26f}{getFullName}}(QString username);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \mbox{\hyperlink{class_admin}{\string~Admin}}();}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 \textcolor{comment}{//\#endif}}
+
+\end{DoxyCode}

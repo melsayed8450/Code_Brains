@@ -1,0 +1,40 @@
+\hypertarget{_professor_info_page_8h_source}{}\doxysection{Professor\+Info\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PROFESSORINFOPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PROFESSORINFOPAGE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}professor.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}ProfessorEditPage.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_professor_info_page}{ProfessorInfoPage}};}
+\DoxyCodeLine{11 \}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_professor_info_page}{ProfessorInfoPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     Q\_OBJECT}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_professor_info_page}{ProfessorInfoPage}}(QWidget *parent = \textcolor{keyword}{nullptr},QMap<QString,Professor>:: Iterator profIt = \{\});}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_professor_info_page}{\string~ProfessorInfoPage}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} professorInfoTableDisplay();}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_professor}{Professor}} prof;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} on\_editPushButton\_clicked();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} refreshTable();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31     Ui::ProfessorInfoPage *ui;}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_professor_edit_page}{ProfessorEditPage}} *profEditPage;}
+\DoxyCodeLine{33 \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PROFESSORINFOPAGE\_H}}
+
+\end{DoxyCode}

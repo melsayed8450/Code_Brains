@@ -1,0 +1,35 @@
+\hypertarget{_professor_page_8h_source}{}\doxysection{Professor\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PROFESSORPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PROFESSORPAGE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}ProfessorInfoPage.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_professor_page}{ProfessorPage}};}
+\DoxyCodeLine{10 \}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_professor_page}{ProfessorPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_professor_page}{ProfessorPage}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_professor_page}{\string~ProfessorPage}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} professorTableDisplay();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} on\_professorTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     Ui::ProfessorPage *ui;}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_professor_info_page}{ProfessorInfoPage}} *pip;}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PROFESSORPAGE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,47 @@
+\hypertarget{_professor_edit_page_8h_source}{}\doxysection{Professor\+Edit\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef PROFESSOREDITPAGE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define PROFESSOREDITPAGE\_H}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}professor.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_professor_edit_page}{ProfessorEditPage}};}
+\DoxyCodeLine{11 \}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_professor_edit_page}{ProfessorEditPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     Q\_OBJECT}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_professor_edit_page}{ProfessorEditPage}}(QWidget *parent = \textcolor{keyword}{nullptr},QMap<QString,Professor>:: Iterator profIt = \{\});}
+\DoxyCodeLine{19 \textcolor{comment}{//    explicit ProfessorEditPage(QWidget *parent = nullptr,Professor \&passedProf() = nullptr);}}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_professor_edit_page_af8cb2278561ffd7959536e99f537a087}{\string~ProfessorEditPage}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22   \textcolor{comment}{//  void courseComboBoxDisplay();}}
+\DoxyCodeLine{23       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_professor_edit_page_a1ced9b46e12201cc26923c8546ad99b2}{allCoursesTableDisplay}}();}
+\DoxyCodeLine{24       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_professor_edit_page_ac7cd3ccb0f17ffb83e4bb599acccc20f}{professorCourseTableDisplay}}();}
+\DoxyCodeLine{25       \textcolor{keywordtype}{void} \mbox{\hyperlink{class_professor_edit_page_ae210827266005a2f0869ea1a2224bc65}{setValidator}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} on\_allCoursesTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} on\_savePushButton\_clicked();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} on\_professorCourseTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     Ui::ProfessorEditPage *ui;}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_professor}{Professor}} *profPtr;}
+\DoxyCodeLine{38      QString oldID;}
+\DoxyCodeLine{39      \textcolor{keywordtype}{int} rowcount=0;}
+\DoxyCodeLine{40 \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PROFESSOREDITPAGE\_H}}
+
+\end{DoxyCode}

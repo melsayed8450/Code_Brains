@@ -1,0 +1,35 @@
+\hypertarget{_admin_info_page_8h_source}{}\doxysection{Admin\+Info\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ADMININFOPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ADMININFOPAGE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}AdminEditPage.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_admin_info_page}{AdminInfoPage}};}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_admin_info_page}{AdminInfoPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     Q\_OBJECT}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_admin_info_page}{AdminInfoPage}}(QString name, QString username,QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_admin_info_page}{\string~AdminInfoPage}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} on\_editButton\_clicked();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{23     Ui::AdminInfoPage *ui;}
+\DoxyCodeLine{24     QWidget *parent = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_admin_edit_page}{AdminEditPage}} *adminEditPage;}
+\DoxyCodeLine{26     QString name;}
+\DoxyCodeLine{27     QString username;}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ADMININFOPAGE\_H}}
+
+\end{DoxyCode}

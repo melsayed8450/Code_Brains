@@ -1,0 +1,49 @@
+\hypertarget{course_8h_source}{}\doxysection{course.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COURSE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COURSE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<QMap>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}LecHall.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_course}{Course}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{private}:}
+\DoxyCodeLine{10         QString name;}
+\DoxyCodeLine{11         QString code;}
+\DoxyCodeLine{12         QString lecHall;}
+\DoxyCodeLine{13       \textcolor{comment}{//  std::map <QString, float> students;}}
+\DoxyCodeLine{14         QString day;}
+\DoxyCodeLine{15         QString time;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         QVector <QString> professorsForCourse;   \textcolor{comment}{//code}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22          \textcolor{comment}{//code-\/-\/-\/>course}}
+\DoxyCodeLine{23         \textcolor{keyword}{static} QMap<QString, Course> courses;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25          \textcolor{comment}{//ID\_Student-\/-\/-\/-\/>grade}}
+\DoxyCodeLine{26         QMap<QString, float> studentsGrade;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \mbox{\hyperlink{class_course}{Course}}();}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_course}{Course}}(QString n, QString c);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         QString getCourseName();}
+\DoxyCodeLine{32         QString getCode();}
+\DoxyCodeLine{33         QString getLecHall();}
+\DoxyCodeLine{34         QString getLecTime();}
+\DoxyCodeLine{35         QString getLecDay();}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \textcolor{keywordtype}{void} setCourseName(QString);}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} setCode(QString);}
+\DoxyCodeLine{39         \textcolor{keywordtype}{void} setLecHall(QString);}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} setLecTime(QString);}
+\DoxyCodeLine{41         \textcolor{keywordtype}{void} setLecDay(QString);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \};}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// COURSE\_H}}
+
+\end{DoxyCode}

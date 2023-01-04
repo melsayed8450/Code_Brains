@@ -1,0 +1,108 @@
+\hypertarget{_home_page_8h_source}{}\doxysection{Home\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef HOMEPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define HOMEPAGE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 \textcolor{comment}{//\#include "{}CoursePage.h"{}}}
+\DoxyCodeLine{6 \textcolor{comment}{//\#include "{}ProfessorPage.h"{}}}
+\DoxyCodeLine{7 \textcolor{comment}{//\#include "{}StudentPage.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}StudentInfoPagee.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}ProfessorInfoPage.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}CourseInfoPage.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}AdminInfoPage.h"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_home_page}{HomePage}};}
+\DoxyCodeLine{18 \}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_home_page}{HomePage}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     Q\_OBJECT}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_home_page}{HomePage}}(QString name,QString username,QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_home_page_aff8e741021104752949c6935c7407f90}{\string~HomePage}}();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_page_af09bf30afa1dbfb56edd1bdb587b731b}{studentTableDisblay}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_page_a6fe94d5cf96b601a8af306d435a55d13}{professorTableDisplay}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_home_page_afe052aa4b4e5c9a980551f558624a809}{courseTableDisplay}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} on\_logoutButton\_clicked();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} on\_infoButton\_clicked();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} on\_studentTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} on\_professorTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} on\_courseTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} on\_addStudent\_clicked();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} on\_addCourse\_clicked();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} on\_addProfessor\_clicked();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} on\_lineEdit\_stud\_textChanged(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} on\_lineEdit\_course\_textChanged(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} on\_lineEdit\_prof\_textChanged(\textcolor{keyword}{const} QString \&arg1);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} on\_search\_stud\_clicked();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} on\_search\_prof\_clicked();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} on\_delete\_prof\_clicked();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} on\_search\_course\_clicked();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} on\_build\_stud\_clicked();}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} on\_build\_course\_clicked();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} on\_build\_prof\_clicked();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} on\_delete\_stud\_clicked();}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} on\_delete\_course\_clicked();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} on\_save\_stud\_clicked();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} on\_save\_course\_clicked();}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} on\_save\_prof\_clicked();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{keyword}{private}:}
+\DoxyCodeLine{88     Ui::HomePage *ui;}
+\DoxyCodeLine{89 \textcolor{comment}{//    CoursePage *coursePage;}}
+\DoxyCodeLine{90 \textcolor{comment}{//    ProfessorPage *professorPage;}}
+\DoxyCodeLine{91 \textcolor{comment}{//    StudentPage *studentPage;}}
+\DoxyCodeLine{92     \mbox{\hyperlink{class_admin_info_page}{AdminInfoPage}} *adminInfoPage;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \mbox{\hyperlink{class_student_info_page}{StudentInfoPage}} *sip;}
+\DoxyCodeLine{95     \mbox{\hyperlink{class_professor_info_page}{ProfessorInfoPage}} *pip;}
+\DoxyCodeLine{96     \mbox{\hyperlink{class_course_info_page}{CourseInfoPage}} *cip;}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98     QString username;}
+\DoxyCodeLine{99     QString name;}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 \};}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// HOMEPAGE\_H}}
+
+\end{DoxyCode}

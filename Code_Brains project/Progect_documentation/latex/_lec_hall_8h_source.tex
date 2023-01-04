@@ -1,0 +1,41 @@
+\hypertarget{_lec_hall_8h_source}{}\doxysection{Lec\+Hall.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LECHALL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LECHALL\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QHash>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_lec_hall}{LecHall}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{private}:}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     QString name;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keyword}{static} QMap<QString,LecHall> lecHalls;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{bool} avaliable[6][5];}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \mbox{\hyperlink{class_lec_hall}{LecHall}}(QString n);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     QString getName();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{bool} isAvaliable(QString day, QString time);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     QStringList timesAval(QString d);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} reserve(QString day, QString time);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{static} QHash <QString,int> days;}
+\DoxyCodeLine{32     \textcolor{keyword}{static} QHash <QString,int> times;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LECHALL\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,33 @@
+\hypertarget{_login_page_8h_source}{}\doxysection{Login\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LOGINPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LOGINPAGE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}./HomePage.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}SignupPage.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }Ui \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_login_page}{LoginPage}}; \}}
+\DoxyCodeLine{10 QT\_END\_NAMESPACE}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_login_page}{LoginPage}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_login_page}{LoginPage}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_login_page}{\string~LoginPage}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} on\_loginButton\_clicked();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{private}:}
+\DoxyCodeLine{24     Ui::LoginPage *ui;}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_home_page}{HomePage}} *homePage;}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_signup_page}{SignupPage}} *signupPage;}
+\DoxyCodeLine{27 \};}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LOGINPAGE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,64 @@
+\hypertarget{student_8h_source}{}\doxysection{student.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STUDENT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STUDENT\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<QStringList>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QChar>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}User.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_student}{Student}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_user}{User}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{private}:}
+\DoxyCodeLine{12 \textcolor{comment}{//    QChar gpa;}}
+\DoxyCodeLine{13     \textcolor{keywordtype}{float} totalGrade;}
+\DoxyCodeLine{14     QString age;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{comment}{//-\/>Course\_Code -\/> grade}}
+\DoxyCodeLine{20     QMap<QString, float> grades;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{comment}{//ID-\/-\/-\/-\/-\/-\/>student}}
+\DoxyCodeLine{24     \textcolor{keyword}{static} QMap<QString, Student> students;}
+\DoxyCodeLine{25     \textcolor{comment}{//QMap<QString, Student> students;}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{comment}{//parameterized}}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}(QString n, QString m, QString e, QString i, QString a);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{comment}{//    QChar getGpa();}}
+\DoxyCodeLine{34 \textcolor{comment}{//    void calcGpa(QChar g\_pa);}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_student_a335c9d4a82d72e5d8a8730bf4fd27a0e}{getTotalGrade}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_student_a1a7f082d3a3edb86544c0126504df95b}{calcTotalGrade}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     QString getFirstLastName();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     QString \mbox{\hyperlink{class_student_ab31dfc88d19507e011b7dc63beed3807}{getFullName}}();}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_ada69806f8005ecc336101f6e163f6b32}{setFullName}}(QString newfullName);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     QString \mbox{\hyperlink{class_student_aecbbaa5f56a58610befa116e23cad657}{getAge}}();}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_aa453f4afe14767c67d7dfaee8934ad34}{setAge}}(QString a\_ge);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     QString \mbox{\hyperlink{class_student_a03a93dcbd371b09d9085d1cb96970b1a}{getMobile}}();}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} setMobile(QString m\_obile);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     QString \mbox{\hyperlink{class_student_a467492fcf9b350ed503267dd95cc8a45}{getMail}}();}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_ac455d9b75d11795470c402bc5524dab2}{setMail}}(QString e\_mail);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     QString \mbox{\hyperlink{class_student_a50a04cc055c2418a15eb566a6cf56639}{getID}}();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_a52b6619c8c8beb7eef5a17ef0a22bc49}{setID}}(QString newID);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} addNew();}
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// STUDENT\_H}}
+
+\end{DoxyCode}

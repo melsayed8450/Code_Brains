@@ -1,0 +1,38 @@
+\hypertarget{_course_info_page_8h_source}{}\doxysection{Course\+Info\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COURSEINFOPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COURSEINFOPAGE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}course.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}CourseEditPage.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_course_info_page}{CourseInfoPage}};}
+\DoxyCodeLine{10 \}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_course_info_page}{CourseInfoPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_course_info_page}{CourseInfoPage}}(QWidget *parent = \textcolor{keyword}{nullptr}, QMap<QString,Course>:: Iterator cIt = \{\});}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_course_info_page}{\string~CourseInfoPage}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} studentsTableDisplay();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} professorTableDisplay();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \mbox{\hyperlink{class_course}{Course}} cors;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} on\_editPushButton\_clicked();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     Ui::CourseInfoPage *ui;}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_course_edit_page}{CourseEditPage}} *corsEditPage;}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// COURSEINFOPAGE\_H}}
+
+\end{DoxyCode}

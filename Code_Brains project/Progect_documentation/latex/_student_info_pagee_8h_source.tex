@@ -1,0 +1,39 @@
+\hypertarget{_student_info_pagee_8h_source}{}\doxysection{Student\+Info\+Pagee.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STUDENTINFOPAGEE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STUDENTINFOPAGEE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}student.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}StudentEditPage.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_student_info_page}{StudentInfoPage}};}
+\DoxyCodeLine{10 \}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_student_info_page}{StudentInfoPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_student_info_page}{StudentInfoPage}}(QWidget *parent = \textcolor{keyword}{nullptr},QMap<QString,Student>:: Iterator stud = \{\});}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_student_info_page}{\string~StudentInfoPage}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} studentInfoTableDisplay();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{class_student}{Student}} sit;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} on\_editPushButton\_clicked();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     Ui::StudentInfoPage *ui;}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_student_edit_page}{StudentEditPage}} *studEditPage;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// STUDENTINFOPAGEE\_H}}
+
+\end{DoxyCode}

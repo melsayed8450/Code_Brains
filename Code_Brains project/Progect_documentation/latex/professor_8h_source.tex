@@ -1,0 +1,52 @@
+\hypertarget{professor_8h_source}{}\doxysection{professor.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PROFESSOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PROFESSOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}User.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<QMap>}}
+\DoxyCodeLine{7 \textcolor{comment}{//\#include<vector>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <course.h>}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_professor}{Professor}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_user}{User}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{13     QString title;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{comment}{//المفروض فى فانكشن جيت كورسز وتإنسرت فى الفيكتور ويبقا الفكتور برايفت}}
+\DoxyCodeLine{17    QVector<Course>coursesForProfessor;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19    \textcolor{comment}{// When I click add I will insert this opject in map with his id;}}
+\DoxyCodeLine{20    \textcolor{keyword}{static} QMap<QString, Professor>professors;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{class_professor_ac6d4e54caf399a841888e60b54eed4c3}{Professor}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{class_professor_ac6d4e54caf399a841888e60b54eed4c3}{Professor}}(QString n, QString m,QString e , QString I,QString t);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     QString \mbox{\hyperlink{class_professor_acd28a44c8f889da4848c0886e4f70b37}{getFirstLastName}}() ;}
+\DoxyCodeLine{27     QString \mbox{\hyperlink{class_professor_a7b3261578ab02e8e5496f82b96a72057}{getFullName}}();}
+\DoxyCodeLine{28     QString \mbox{\hyperlink{class_professor_a25ef18e0c7e43407cd590144f071b01e}{getMobile}}();}
+\DoxyCodeLine{29     QString \mbox{\hyperlink{class_professor_aa62f085dda84e07b3a5ed05ea6ee8935}{getMail}}();}
+\DoxyCodeLine{30     QString \mbox{\hyperlink{class_professor_ac4cf6e172e0f3b57376f490462f3e2ed}{getID}}();}
+\DoxyCodeLine{31     QString \mbox{\hyperlink{class_professor_a935c168808a26a7d7b8f60bc1b100ddd}{getTitle}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_professor_abea352e485cfec9c66184f00f917f1dd}{setFullName}}(QString newfirstName);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_professor_affdc5cbe22a86a5d10623283262c11d0}{setMobile}}(QString newMobile);}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_professor_a5effa33e1b7909b2476687324a42fcfe}{setMail}}(QString newEmail);}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_professor_a73c34dbdbc5f12025330b74c3872f3d6}{setID}}(QString newID);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} setTitle(QString newTitle);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PROFESSOR\_H}}
+
+\end{DoxyCode}

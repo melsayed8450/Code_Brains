@@ -1,0 +1,42 @@
+\hypertarget{_student_edit_page_8h_source}{}\doxysection{Student\+Edit\+Page.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STUDENTEDITPAGE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STUDENTEDITPAGE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}student.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_student_edit_page}{StudentEditPage}};}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_student_edit_page}{StudentEditPage}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     Q\_OBJECT}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_student_edit_page}{StudentEditPage}}(QWidget *parent = \textcolor{keyword}{nullptr},QMap<QString,Student>:: Iterator stud = \{\});}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_student_edit_page_ab352de42b448e170a45be2f6c30b904f}{\string~StudentEditPage}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_edit_page_af16cf32d214b3edbc78cfd86c12523c0}{studentCoursesDisplay}}();}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_edit_page_a4adfeace85996b30c01bc4172b2f6071}{allCoursesDisplay}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} courseComboBoxDisplay();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_edit_page_a8f85bd10c641e31d16d924f7b74a0575}{setValidator}}();}
+\DoxyCodeLine{23 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} on\_savePushButton\_clicked();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} on\_allCoursesTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} on\_setPushButton\_clicked();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} on\_studentCoursesTable\_cellDoubleClicked(\textcolor{keywordtype}{int} row, \textcolor{keywordtype}{int} column);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30     Ui::StudentEditPage *ui;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \mbox{\hyperlink{class_student}{Student}} *studPtr;}
+\DoxyCodeLine{33      QString oldID;}
+\DoxyCodeLine{34 \textcolor{keywordtype}{int} rowcount =0;}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// STUDENTEDITPAGE\_H}}
+
+\end{DoxyCode}
