@@ -1,3 +1,4 @@
 # Code_Brains
-# The Admin registered
-# username: omar     password: 01234567
+# The Admin registered in our app
+# username: omar     
+# password: 01234567
